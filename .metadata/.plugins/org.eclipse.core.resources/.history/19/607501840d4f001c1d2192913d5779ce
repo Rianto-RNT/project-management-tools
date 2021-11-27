@@ -1,0 +1,5 @@
+package com.rian.demo.web;
+
+public class UserController {
+
+}
