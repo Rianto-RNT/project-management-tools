@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="ISO-8859-1">
 
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -14,8 +14,8 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 
-<title>Insert title here</title>
 </head>
+
 <body>
 
 	<nav th:replace="layouts :: navbar"></nav>
@@ -23,7 +23,7 @@
 	<div class="container">
 		<form action="/projects/save" th:object="${project}" method="POST">
 
-			<input type="text" placeholder="Project Name" th:field="${project.name}">
+			<input type="text" placeholder="Project Name" th:field="*{name}">
 
 			<select th:field="${project.stage}">
 				<option th:value="NOTSTARTED">Not Started</option>
@@ -40,4 +40,5 @@
 	</div>
 
 </body>
+
 </html>
