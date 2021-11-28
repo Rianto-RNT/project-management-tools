@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="com.rian.pma.dao.ProjectRepository"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
